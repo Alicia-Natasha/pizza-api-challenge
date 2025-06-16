@@ -1,6 +1,6 @@
 from sqlalchemy.orm import validates
-from . import db
-from .restaurant_pizza import RestaurantPizza
+from server.models import db
+from server.models.restaurant_pizza import RestaurantPizza
 
 class Restaurant(db.Model):
     __tablename__ = 'restaurants'
